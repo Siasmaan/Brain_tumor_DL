@@ -35,3 +35,7 @@ for i, image_name in enumerate(yes_tumor_images):
 
 datset = np.array(dataset)
 label = np.array(label)
+
+x_train, x_test, y_train, y_test = train_test_split(dataset, label, test_size=0.2, random_state=0)
+
+print(x_train.shape)
